@@ -1,0 +1,99 @@
+/*
+Project Name: Blog Page
+    -Name : SPA
+    -Author : Mert Kurtoğlu
+    -Version   : 1.0
+    -Description: Blog
+*/
+
+/* =================================================================================================*/
+
+/* ### ROOT ### */
+
+:root{
+    --template-bg: rgb(243, 239, 239);
+}
+
+/* =================================================================================================*/
+
+/* ### COMMON PROPERTY ### */
+
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    position: relative;
+    line-height: 1.7;
+    background-color: var(--template-bg);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#main_p {
+    margin: 0 2rem;
+    text-align: justify;
+    font-size: 2rem;
+}
+
+i {
+    font-size: 1.5rem;
+}
+
+/* =================================================================================================*/
+
+/* ### NAVBAR ### */
+
+#navbar {
+    height: 4rem;
+    position:relative;
+    top: 0;
+}
+
+#navbar_right button {
+    display: inline-block;
+    padding-top: 0.8rem;
+    margin-left: 0.8rem;
+}
+
+#logo_id {
+    width: 5.5rem;
+ }
+
+ .modal-title {
+    margin-left: 23.3rem;
+    font-weight:bold;
+  }
+/* =================================================================================================*/
+
+/* ### FOOTER ### */
+
+footer {
+    background-color: rgb(228, 228, 228);
+    padding: 1rem;
+    width: auto;
+}
+
+#footer_row {
+    display: flex;
+    align-items: center;
+}
+
+#footer_icons ul li{
+    display: inline-block;
+    padding-top: 0.8rem;
+    margin-left: 0.8rem;
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Full Stack Developer</title>
+
+    <meta charset="UTF-8" />
+
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+    <!-- SEO -->
+    <meta name="author" content="Mert Kurtoğlu" />
+    <meta name="description" content="Html5,css3,js,jquery,bootstrap,java,database" />
+    <meta name="keyword" content="Html5,css3,js,jquery,bootstrap,java,database" />
+    <meta name="title" content="Full Stack Developer" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+
+    <!-- Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <!-- Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400&display=swap" rel="stylesheet" />
+
+    <!-- jquery UI -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <!-- animate CSS-->
+    <link rel="stylesheet" href="css/animate.min.css" />
+
+    <!-- wow js-->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW({
+            boxClass: "wow", // default
+            animateClass: "animated", // default
+            offset: 0, // default
+            mobile: true, // default
+            live: true, // default
+        }).init();
+    </script>
+
+    <!-- external css -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+
+    <noscript>Bu browser JS desteklemiyor.</noscript>
+    <span id="noscript"></span>
+
+    <!-- Modal Start-->
+    <!--Login-->
+    <div class="modal fade" id="modalLogin" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+    aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="get" autocomplete="on">
+                        <div class="form-group mb-3">
+                            <label for="email_data">Email</label>
+                            <input type="email" id="email_data" name="email_data" class="form-control"
+                                placeholder="Email..." required autofocus />
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="password_data">Password</label>
+                            <input type="password" id="password_data" name="password_data" class="form-control"
+                                placeholder="Password..." required  />
+                        </div>
+                        <div class="form-group mb-3">
+                            <button type="reset" class="btn btn-danger">Reset</button>
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal End-->
+
+    <!-- Navbar Start-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.png" alt="it isn't showing logo" id="logo_id">
+            </a>
+            <div class="col-6 collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#first" aria-current="page">Home <span
+                                class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="col-6 d-flex justify-content-left">                    
+                    <form class="d-flex my-2 my-lg-0" style="justify-content: flex-start;">
+                        <input class="form-control me-sm-2" type="text" placeholder="Search ..."  autofocus/>
+                        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search </button>
+                    </form>
+                </div>
+                <div class="d-flex justify-content-center" id="navbar_right">
+                    <button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#modalLogin"><i style="color:#d8e8ff;" class="fa-solid fa-right-to-bracket"></i></button>
+                    <button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#modalRegister"><i style="color:#d8e8ff;" class="fa-solid fa-user-plus"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End-->
+
+
+    <!---Main Start-->
+    <main id="main_id">
+        <section id="first_section">
+            <p id="main_p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos totam odio numquam ut, impedit sed libero fugiat autem modi deserunt nulla laboriosam possimus, iusto, dolore explicabo voluptate qui voluptatibus incidunt.
+            Cumque accusantium eveniet voluptate pariatur modi cum id, laboriosam soluta dicta nam saepe dignissimos corporis a iusto ab, explicabo vitae. Et optio quia excepturi est tempore laborum libero corporis incidunt?
+            Mollitia explicabo dolore temporibus nisi non, eveniet veniam rerum quasi vero ea consectetur laudantium alias a cupiditate nobis saepe illum perspiciatis sit eligendi corrupti officia in facere? Quidem, sed quibusdam?
+            Harum cum totam consectetur odit, facilis quo, similique, doloremque tenetur aspernatur laborum reiciendis. Laboriosam earum consequatur perspiciatis mollitia dignissimos tempora fugit ipsam aut. Quae quaerat eveniet ut voluptatibus laborum id.
+            Tempore facilis vel expedita eligendi iusto, animi blanditiis fuga at excepturi ipsum iste voluptate ipsam aperiam minus voluptas nulla nesciunt in, magni fugit quidem itaque, quod quisquam. Dolore, nemo assumenda.
+            Consectetur dolorem, quidem, laboriosam corrupti eveniet, veritatis voluptate alias cumque ipsam ipsa deleniti. Distinctio, ad dicta assumenda aut saepe rerum hic eius! Quod provident reprehenderit error, est earum voluptates laudantium!
+            Saepe iure enim distinctio et fugit, officia porro similique natus iusto odit non ut officiis consequuntur quas? Nobis, doloribus. Ipsa veniam vero adipisci consectetur, molestiae aspernatur quas? Sed, maxime temporibus!
+            Magnam veniam aliquid repellat natus cum mollitia corporis sapiente. Dolorem facere incidunt, quisquam nulla neque nihil provident officiis natus minima consequuntur, eligendi, ratione repudiandae error earum non quos cumque esse.
+            Iste eos ipsa, sed commodi qui, inventore facilis placeat ut corrupti quas dolorum maxime fugit. Ex ducimus commodi repellat vitae distinctio neque in tempore, sequi unde ipsam fuga officia earum!
+            Iure libero aliquam ex autem! Laborum facilis mollitia voluptate ducimus hic, non reiciendis nesciunt eum, aut totam numquam maxime reprehenderit? Ipsum rerum magni numquam ex doloremque voluptatem cumque facere exercitationem.</p>
+        </section>
+    </main>
+    <!---Main End-->
+
+    <!---Footer Start-->
+    <footer id="footer_id">
+        <section id="footer_contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-lg-4">
+                        <h3 class="text-uppercase">Contact</h3>
+                        <div className="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4">
+                            <div>
+                            <p> <i class="fas fa-home me-3 text-secondary"></i> İzmir / TÜRKİYE</p>
+                            <p> <i class="fas fa-envelope me-3 text-secondary"></i>info@example.com</p>
+                            <p> <i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+                            <p> <i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <h3 class="text-uppercase">About Us</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ut eligendi eos voluptatum debitis a delectus quo nam optio cupiditate impedit architecto maxime, consectetur, excepturi recusandae rerum, iure saepe accusamus.</p>
+                    </div>
+                    <div class="col-md-4 col-lg-4 ">
+                        <h3 class="text-uppercase">Email</h3>
+                        <form action="#" id="form_email">
+                            <input type="text" class="form-control mb-2" placeholder="Subject" autofocus required/>
+                            <input type="text" class="form-control mb-2" placeholder="Email" autofocus required/>
+                            <textarea class="form-control" rows="5" placeholder="Write your message"></textarea>
+                            <button type="submit" class="btn btn-outline-primary mt-3">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div id="footer_row">
+                    <div class="col">
+                        2022-2023 &copy; All rights reserved. <a href="#">Design and codes By Mert Kurtoğlu</a>
+                    </div>
+                    <div class="col">
+                        <div class="container-fluid" id="footer_icons">
+                            <ul class="list-unstyled text-end">
+                                <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin text-primary icon_size" style="font-size: 2rem;"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa-brands fa-youtube text-danger icon_size" style="font-size: 2rem;"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa-solid fa-blog text-warning icon_size" style="font-size: 2rem;"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </footer>
+    <!---Footer End-->
+
+    <!-- Counter JS -->
+    <!-- Waypoints JavaScript Libraries -->
+    <script src="./experiences/waypoints/waypoints.min.js"></script>
+    <!-- Counterup JavaScript Libraries -->
+    <script src="./experiences/counterup/counterup.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <!-- external js -->
+    <script src="./template.js"></script>
+</body>
+</html>
