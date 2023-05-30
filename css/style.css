@@ -83,17 +83,16 @@ i {
 
 footer {
     background-color: rgb(228, 228, 228);
-    padding: 1rem;
+    padding: 1rem 1rem 0rem;
     width: auto;
 }
 
 #footer_row {
     display: flex;
-    align-items: center;
+
 }
 
-#footer_icons ul li{
+#footer_icons li{
     display: inline-block;
-    padding-top: 0.8rem;
-    margin-left: 0.8rem;
+    margin-right: 0.8rem;
 }

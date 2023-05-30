@@ -47,7 +47,7 @@
     </script>
 
     <!-- external css -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar">
@@ -69,13 +69,11 @@
                     <form action="#" method="get" autocomplete="on">
                         <div class="form-group mb-3">
                             <label for="email_data">Email</label>
-                            <input type="email" id="email_data" name="email_data" class="form-control"
-                                placeholder="Email..." required autofocus />
+                            <input type="email" id="email_data" name="email_data" class="form-control" required autofocus />
                         </div>
                         <div class="form-group mb-3">
                             <label for="password_data">Password</label>
-                            <input type="password" id="password_data" name="password_data" class="form-control"
-                                placeholder="Password..." required  />
+                            <input type="password" id="password_data" name="password_data" class="form-control" required  />
                         </div>
                         <div class="form-group mb-3">
                             <button type="reset" class="btn btn-danger">Reset</button>
@@ -86,7 +84,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Register-->
     <div class="modal fade" id="modalRegister" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
     aria-labelledby="modalTitleId" aria-hidden="true">
@@ -100,33 +98,27 @@
                     <form action="#" method="get" autocomplete="on">
                         <div class="form-group mb-3">
                             <label for="fName_data">First Name</label>
-                            <input type="text" id="fName_data" name="fName_data" class="form-control"
-                                placeholder="First Name..." required autofocus />
+                            <input type="text" id="fName_data" name="fName_data" class="form-control" required autofocus />
                         </div>
                         <div class="form-group mb-3">
                             <label for="mName_data">Middle Name</label>
-                            <input type="text" id="mName_data" name="mName_data" class="form-control"
-                                placeholder="Middle Name..." autofocus />
+                            <input type="text" id="mName_data" name="mName_data" class="form-control" autofocus />
                         </div>
                         <div class="form-group mb-3">
                             <label for="lName_data">Last Name</label>
-                            <input type="text" id="lName_data" name="lName_data" class="form-control"
-                                placeholder="Last Name..." required autofocus />
+                            <input type="text" id="lName_data" name="lName_data" class="form-control" required autofocus />
                         </div>
                         <div class="form-group mb-3">
                             <label for="address_data">Address</label>
-                            <input type="text" id="address_data" name="address_data" class="form-control"
-                                placeholder="Address..." required autofocus />
+                            <input type="text" id="address_data" name="address_data" class="form-control" required autofocus />
                         </div>
                         <div class="form-group mb-3">
                             <label for="email_data">Email</label>
-                            <input type="email" id="email_data" name="email_data" class="form-control"
-                                placeholder="Email..." required autofocus />
+                            <input type="email" id="email_data" name="email_data" class="form-control" required autofocus />
                         </div>
                         <div class="form-group mb-3">
                             <label for="passwd_data">Password</label>
-                            <input type="password" id="passwd_data" name="passwd_data" class="form-control"
-                                placeholder="Password..." required  />
+                            <input type="password" id="passwd_data" name="passwd_data" class="form-control" required  />
                         </div>
                         <div class="form-group mb-3">
                             <button type="reset" class="btn btn-danger">Reset</button>
@@ -209,12 +201,12 @@
         <section id="footer_contact">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 col-lg-4">
+                    <div class="col-md-4 col-lg-4" id="contact">
                         <h3 class="text-uppercase">Contact</h3>
                         <div className="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4">
                             <div>
                             <p> <i class="fas fa-home me-3 text-secondary"></i> İzmir / TÜRKİYE</p>
-                            <p> <i class="fas fa-envelope me-3 text-secondary"></i>info@example.com</p>
+                            <p> <i class="fas fa-envelope me-3 text-secondary"></i> info@example.com</p>
                             <p> <i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
                             <p> <i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
                         </div>
@@ -223,35 +215,26 @@
                     <div class="col-md-4 col-lg-4">
                         <h3 class="text-uppercase">About Us</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ut eligendi eos voluptatum debitis a delectus quo nam optio cupiditate impedit architecto maxime, consectetur, excepturi recusandae rerum, iure saepe accusamus.</p>
+                        <ul class="list-unstyled text-start" id="footer_icons" >
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin text-primary icon_size"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-youtube text-danger icon_size" ></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-solid fa-blog text-warning icon_size"></i></a></li>
+                        </ul>
                     </div>
                     <div class="col-md-4 col-lg-4 ">
                         <h3 class="text-uppercase">Email</h3>
                         <form action="#" id="form_email">
                             <input type="text" class="form-control mb-2" placeholder="Subject" autofocus required/>
                             <input type="text" class="form-control mb-2" placeholder="Email" autofocus required/>
-                            <textarea class="form-control" rows="5" placeholder="Write your message"></textarea>
+                            <textarea class="form-control" rows="4" placeholder="Write your message"></textarea>
                             <button type="submit" class="btn btn-outline-primary mt-3">Send</button>
                         </form>
                     </div>
                 </div>
+            </div>   
+            <div id="footer_row">
+                <p>2022-2023 &copy; All rights reserved. <a href="#">Design and codes By Mert Kurtoğlu</a></p> 
             </div>
-            <div class="container-fluid">
-                <div id="footer_row">
-                    <div class="col">
-                        2022-2023 &copy; All rights reserved. <a href="#">Design and codes By Mert Kurtoğlu</a>
-                    </div>
-                    <div class="col">
-                        <div class="container-fluid" id="footer_icons">
-                            <ul class="list-unstyled text-end">
-                                <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin text-primary icon_size" style="font-size: 2rem;"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fa-brands fa-youtube text-danger icon_size" style="font-size: 2rem;"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fa-solid fa-blog text-warning icon_size" style="font-size: 2rem;"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
         </section>
     </footer>
     <!---Footer End-->
