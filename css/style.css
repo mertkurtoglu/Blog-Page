@@ -8,91 +8,359 @@ Project Name: Blog Page
 
 /* =================================================================================================*/
 
-/* ### ROOT ### */
+/*---- ROOT ----*/
 
-:root{
-    --template-bg: rgb(243, 239, 239);
+:root {
+  --template-bg: rgb(243, 239, 239);
 }
 
 /* =================================================================================================*/
 
-/* ### COMMON PROPERTY ### */
+/*---- HEADER ----*/
 
-*{
-    margin: 0;
-    padding: 0px;
-    box-sizing: border-box;
+header {
+  background-image: url(../img/header.jpg);
+  background-size: cover;
 }
 
-html {
-    font-size: 15px;
-}
-
-body {
-    font-family: "Work Sans", sans-serif;
-    position: relative;
-    line-height: 1.7;
-    background-color: var(--template-bg);
-}
-
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
-}
-
-#main_p {
-    margin: 0 2rem;
-    text-align: justify;
-    font-size: 2rem;
-}
-
-i {
-    font-size: 1.5rem;
+header h1,
+h4 {
+  color: white;
 }
 
 /* =================================================================================================*/
 
-/* ### NAVBAR ### */
+/*---- LINE CLAMP ----*/
 
-#navbar {
-    height: 4rem;
-    position:relative;
-    top: 0;
+.line-clamp4 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  margin-bottom: 1rem;
 }
 
-#navbar_right button {
-    display: inline-block;
-    padding-top: 0.8rem;
-    margin-left: 0.8rem;
+.line-clamp6 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+
+.line-clamp8 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+}
+
+.line-clamp10 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+}
+
+.line-clamp12 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 12;
+  -webkit-box-orient: vertical;
+}
+/* =================================================================================================*/
+
+/*---- NAVBAR ----*/
+
+#navbar_first {
+  height: 2.5rem;
+  position: relative;
+  top: 0;
+}
+
+#navbar_second {
+  height: 4rem;
+  position: sticky;
+  top: 0;
+}
+
+#user_icons button i,
+#social_icons li {
+  display: inline-block;
+  padding-top: 0.8rem;
+  margin-left: 0.8rem;
+  font-size: 1.2rem;
 }
 
 #logo_id {
-    width: 5.5rem;
- }
+  width: 5.5rem;
+}
 
- .modal-title {
-    margin-left: 23.3rem;
-    font-weight:bold;
-  }
+.modal-title {
+  margin-left: 23.3rem;
+  font-weight: bold;
+}
+
+/*---- TOGGLE SWITCH ----*/
+
+.toggle-switch {
+  position: relative;
+  width: 40px;
+  height: 24px;
+  margin: 0.9rem 1rem 0 0;
+}
+
+.toggle-switch .label:hover {
+  cursor: pointer;
+}
+
+.toggle-switch input[type="checkbox"] {
+  display: none;
+}
+
+.toggle-switch label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 24px;
+  background-color: #ddd;
+  border-radius: 34px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-switch label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.toggle-switch input[type="checkbox"]:checked + label {
+  background-color: #444;
+}
+
+.toggle-switch input[type="checkbox"]:checked + label::after {
+  transform: translateX(26px);
+}
+
 /* =================================================================================================*/
 
-/* ### FOOTER ### */
+/*---- COMMON PROPERTY ----*/
+
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  position: relative;
+  line-height: 1.7;
+  background-color: var(--template-bg);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  margin: 0 2rem;
+  text-align: justify;
+  font-weight: 400;
+}
+
+.dark_mode {
+  background-color: black !important;
+  color: white !important;
+}
+/*---- PROJECTS SECTION ----*/
+
+#projects {
+  padding-top: 2rem;
+}
+
+#projects i {
+  font-size: 5rem;
+  margin: 2rem;
+  display: block;
+}
+
+#projects h1 {
+  font-weight: bold;
+}
+
+/*---- ACHIEVEMENTS SECTION ----*/
+
+#achievements {
+  background-color: #0b5ed7;
+  color: white;
+  padding-top: 4rem;
+  height: 30rem;
+}
+
+.achievements-header h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-weight: bold;
+}
+
+#achievements i {
+  font-size: 6rem;
+  margin: 1rem;
+  display: block;
+}
+
+.counter {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.text-light {
+  font-size: large;
+}
+
+/*---- NEWS SECTION ----*/
+
+#news {
+  padding: 2rem 2rem;
+  height: 30rem;
+}
+
+#news h1 {
+  font-weight: bold;
+}
+
+/*---- ABOUT US SECTION ----*/
+
+#aboutus {
+  padding: 5rem 5rem;
+  color: white;
+  background-image: url(../img/izmir.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-attachment: fixed;
+  height: 40rem;
+}
+
+#aboutus h1 {
+  font-weight: bold;
+}
+
+#aboutus p {
+  font-weight: bold;
+}
+
+.aboutus-header {
+  background-color: rgba(11, 10, 44, 0.555);
+}
+
+/*----BLOG SECTION ----*/
+
+#blog {
+  padding: 3rem 3rem;
+  position: relative;
+}
+
+#blog::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background-image: url(../img/blog.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.9;
+}
+
+.card-header {
+  text-align: center;
+  font-weight: bold;
+  font-size: x-large;
+  color: black;
+}
+
+.card-text {
+  color: black;
+}
+
+.card {
+  margin-top: 3rem;
+}
+
+/*----MAP SECTION ----*/
+
+#map {
+  background-color: #212529;
+}
+
+#map iframe {
+  width: 100%;
+  height: 35rem !important;
+}
+
+/* =================================================================================================*/
+
+/*---- FOOTER ----*/
 
 footer {
-    background-color: rgb(228, 228, 228);
-    padding: 1rem 1rem 0rem;
-    width: auto;
+  background-color: #212529;
+  color: white;
+  padding: 1rem 1rem 0rem;
+  width: auto;
+  padding: 1rem 2rem 0 2rem;
 }
 
-#footer_row {
-    display: flex;
-
+#back_top {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 0.5rem 2rem;
+  margin-right: 0.6rem;
+  margin-bottom: 0.6rem;
+  background-color: #0b5ed7;
+  color: white;
+  width: 0.6rem;
 }
 
-#footer_icons li{
-    display: inline-block;
-    margin-right: 0.8rem;
+#back_top:hover {
+  background-color: white;
+  color: #0b5ed7;
+  opacity: 0.9;
+  transition: all 1s;
+}
+
+/*---- MEDIA QUERY ----*/
+/* 1<=X<=767 */
+@media screen and (min-width: 1px) {
+  #achievements,
+  #projects {
+    height: 50rem;
+  }
+}
+/* 768<=X<=??? */
+@media screen and (min-width: 768px) {
+  #achievements,
+  #projects {
+    height: 30rem;
+  }
 }
