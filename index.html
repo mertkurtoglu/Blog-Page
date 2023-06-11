@@ -307,111 +307,110 @@
 
     <!-- Navbar -->
     <!-- First Navbar -->
-    <nav
-      class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"
-      id="navbar_first"
-    >
-      <div class="container-fluid">
-        <div class="col-6 collapse navbar-collapse" id="collapsibleNavId">
-          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-            <ul class="list-unstyled text-start" id="social_icons">
-              <li>
-                <a href="https://www.linkedin.com/in/mert-kurtoglu/" target="_blank"
-                  ><i class="fa-brands fa-linkedin text-primary icon_size"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#" target="_blank"
-                  ><i class="fa-brands fa-youtube text-danger icon_size"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#" target="_blank"
-                  ><i class="fa-solid fa-blog text-warning icon_size"></i
-                ></a>
-              </li>
-            </ul>
-          </ul>
-          <div class="d-flex justify-content-center" id="user_icons">
-            <!-- <button class="btn btn-sm btn-primary" onclick="darkMode()"><i class="fa-solid fa-circle-half-stroke"></i></button> -->
-            <div class="toggle-switch">
-                <input type="checkbox" id="toggle" />
-                <label for="toggle"></label>
-              </div>
-            <button
-              class="btn btn-sm"
-              data-bs-toggle="modal"
-              data-bs-target="#modalLogin"
-            >
+    <nav className="navbar" id="navbar_first">
+      <div className="container-fluid">
+        <ul className="list-unstyled text-start" id="social_icons">
+          <li>
+            <a href="https://www.linkedin.com/in/mert-kurtoglu/" target="_blank">
+              <i className="fa-brands fa-linkedin text-primary icon_size" />
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <i className="fa-brands fa-youtube text-danger icon_size" />
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <i className="fa-solid fa-blog text-warning icon_size" />
+            </a>
+          </li>
+        </ul>
+
+        <ul className="d-flex justify-content-center" id="user_icons">
+          <li id="flagDiv">
+            <a href="#">
+              <img className="flag" src="img/tr.png" alt="tr" />
+            </a>
+            <a href="#">
+              <img className="flag" src="img/en.png" alt="en" />
+            </a>
+          </li>
+          <li className="toggle-switch">
+            <input type="checkbox" id="toggle" />
+            <label htmlFor="toggle" />
+          </li>
+          <li>
+            <button className="btn btn-sm" data-bs-toggle="modal" data-bs-target="#modalLogin">
               <i
-                style="color: #d8e8ff"
-                class="fa-solid fa-right-to-bracket"
-              ></i>
+              style="color: #d8e8ff"
+              class="fa-solid fa-right-to-bracket"
+            ></i>
             </button>
-            <button
-              class="btn btn-sm"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#registerModalOffCanvas"
-            >
+            <button className="btn btn-sm" data-bs-toggle="offcanvas" data-bs-target="#registerModalOffCanvas">
               <i style="color: #d8e8ff" class="fa-solid fa-user-plus"></i>
             </button>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </nav>
 
     <!-- Second Navbar -->
-    <nav
-      class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"
-      id="navbar_second"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="./img/logo.png" alt="it isn't showing logo" id="logo_id" />
+    <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="navbar_second">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="#">
+          <img src="img/logo.png" alt="it isn't showing logo" id="logo_id" />
         </a>
-        <div class="col-6 collapse navbar-collapse" id="collapsibleNavId">
-          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="#" aria-current="page"
-                >Home <span class="visually-hidden">(current)</span></a
-              >
+        <button
+          className="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon" />
+        </button>
+        <div className="collapse navbar-collapse" id="collapsibleNavId">
+          <ul className="navbar-nav me-auto mt-2 mt-lg-0">
+            <li className="nav-item">
+              <a className="nav-link active" href="#" aria-current="page">
+                Home <span className="visually-hidden">(current)</span>
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Projects
+              </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#news">News</a>
-             </li>
-             <li class="nav-item">
-                 <a class="nav-link" href="#aboutus">About Us</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#news">
+                News
+              </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#blog">Blog</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#aboutus">
+                About Us
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#blog">
+                Blog
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#contact">
+                Contact
+              </a>
             </li>
           </ul>
-
-          <div class="col-2">
-            <form
-              class="d-flex my-2 my-lg-0"
-              style="justify-content: flex-start"
-            >
-              <input
-                class="form-control me-sm-2"
-                type="text"
-                placeholder="Search ..."
-                autofocus
-              />
-              <button
-                class="btn btn-outline-warning my-2 my-sm-0"
-                type="submit"
-              >
-                Search
-              </button>
-            </form>
-          </div>
+          <form className="d-flex my-2 my-lg-0" style="justify-content: flex-start">
+            <input className="form-control me-sm-2" type="text" placeholder="Search ..." autofocus />
+            <button className="btn btn-outline-warning my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
         </div>
       </div>
     </nav>
