@@ -197,6 +197,10 @@ p {
   background-color: black !important;
   color: white !important;
 }
+
+.dark_mode h4.text-dark {
+  color: white !important;
+}
 /*---- PROJECTS SECTION ----*/
 
 #projects {
@@ -359,10 +363,15 @@ footer {
 
 /*---- MEDIA QUERY ----*/
 /* 1<=X<=767 */
-@media screen and (min-width: 1px) {
-  #achievements,
+@media screen and (min-width: 1px) and (max-width: 768px) {
+  #achievements {
+    height: 60rem;
+  }
   #projects {
-    height: 50rem;
+    height: 75rem;
+  }
+  #aboutus {
+    height: 80rem;
   }
 }
 /* 768<=X<=??? */

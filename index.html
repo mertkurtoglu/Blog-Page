@@ -1,69 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Full Stack Developer</title>
 
-    <meta charset="UTF-8" />
+<head>
+  <title>Full Stack Developer</title>
 
-    <!-- Responsive Design -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
+  <meta charset="UTF-8" />
 
-    <!-- SEO -->
-    <meta name="author" content="Mert Kurtoğlu" />
-    <meta
-      name="description"
-      content="Html5,css3,js,jquery,bootstrap,java,database"
-    />
-    <meta
-      name="keyword"
-      content="Html5,css3,js,jquery,bootstrap,java,database"
-    />
-    <meta name="title" content="Full Stack Developer" />
+  <!-- Responsive Design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 
-    <!-- Bootstrap Core CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
+  <!-- SEO -->
+  <meta name="author" content="Mert Kurtoğlu" />
+  <meta name="description" content="Html5,css3,js,jquery,bootstrap,java,database" />
+  <meta name="keyword" content="Html5,css3,js,jquery,bootstrap,java,database" />
+  <meta name="title" content="Full Stack Developer" />
 
-    <!-- Font Awesome-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
+  <!-- Bootstrap Core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
 
-    <!-- Google Font-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
-    <!-- Jquery UI -->
-    <link
-      rel="stylesheet"
-      href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
-    />
-    <link rel="stylesheet" href="/resources/demos/style.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <!-- Google Font-->
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400&display=swap" rel="stylesheet" />
 
-    <!-- Animate CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+  <!-- Jquery UI -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" href="/resources/demos/style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
-    <!-- WOW JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
-    <!-- <script> new WOW(
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- WOW JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <!-- <script> new WOW(
             {
                 boxClass: 'wow',      // default
                 animateClass: 'animated', // default
@@ -73,50 +49,50 @@
             }
         ).init() </script> -->
 
-    <!-- Sweet Alert -->
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <!-- Sweet Alert -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
 
-  <body data-bs-spy="scroll" data-bs-target="#navbar">
-    <noscript>This browser does not support JS</noscript>
-    <span id="noscript"></span>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+  <noscript>This browser does not support JS</noscript>
+  <span id="noscript"></span>
 
-    <!-- Modal -->
-    <!-- Login -->
-    <div class="modal fade" id="modalLogin" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+  <!-- Modal -->
+  <!-- Login -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
     aria-labelledby="modalTitleId" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalTitleId">Login</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="#" method="get" autocomplete="on">
-                        <div class="form-group mb-3">
-                            <label for="email_data">Email</label>
-                            <input type="email" id="email_data" name="email_data" class="form-control" required autofocus />
-                            <label class="text-danger" id="email_data_validation"></label>
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="password_data">Password</label>
-                            <input type="password" id="password_data" name="password_data" class="form-control" required  />
-                            <label class="text-danger" id="passwd_data_validation"></label>
-                        </div>
-                        <div class="form-group mb-3">
-                            <button type="reset" class="btn btn-danger">Reset</button>
-                            <button type="submit" class="btn btn-primary" id="loginSubmit">Send</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitleId">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <form action="#" method="get" autocomplete="on">
+            <div class="form-group mb-3">
+              <label for="email_data">Email</label>
+              <input type="email" id="email_data" name="email_data" class="form-control" required autofocus />
+              <label class="text-danger" id="email_data_validation"></label>
+            </div>
+            <div class="form-group mb-3">
+              <label for="password_data">Password</label>
+              <input type="password" id="password_data" name="password_data" class="form-control" required />
+              <label class="text-danger" id="passwd_data_validation"></label>
+            </div>
+            <div class="form-group mb-3">
+              <button type="reset" class="btn btn-danger">Reset</button>
+              <button type="submit" class="btn btn-primary" id="loginSubmit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- <div
+  <!-- <div
       class="offcanvas offcanvas-end bg-dark text-white"
       data-bs-backdrop="static"
       tabindex="-1"
@@ -165,8 +141,8 @@
       </div>
     </div> -->
 
-    <!-- Register -->
-    <!--<div class="modal fade" id="modalRegister" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+  <!-- Register -->
+  <!--<div class="modal fade" id="modalRegister" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
     aria-labelledby="modalTitleId" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
@@ -210,785 +186,693 @@
         </div>
     </div> -->
 
-    <div
-      class="offcanvas offcanvas-end bg-dark text-white"
-      data-bs-backdrop="static"
-      tabindex="-1"
-      id="registerModalOffCanvas"
-      aria-labelledby="registerModalOffCanvasLabel"
-    >
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="registerModalOffCanvasLabel">
-          Register
-        </h5>
-        <button
-          type="button"
-          class="btn-close btn-close-white"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
+  <div class="offcanvas offcanvas-end bg-dark text-white" data-bs-backdrop="static" tabindex="-1"
+    id="registerModalOffCanvas" aria-labelledby="registerModalOffCanvasLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="registerModalOffCanvasLabel">
+        Register
+      </h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="modal-body">
+        <form action="#" method="get" autocomplete="on">
+          <div class="form-group mb-3">
+            <label for="fName_data">First Name</label>
+            <input type="text" id="fName_data" name="fName_data" class="form-control" required autofocus />
+          </div>
+          <div class="form-group mb-3">
+            <label for="mName_data">Middle Name</label>
+            <input type="text" id="mName_data" name="mName_data" class="form-control" autofocus />
+          </div>
+          <div class="form-group mb-3">
+            <label for="lName_data">Last Name</label>
+            <input type="text" id="lName_data" name="lName_data" class="form-control" required autofocus />
+          </div>
+          <div class="form-group mb-3">
+            <label for="address_data">Address</label>
+            <input type="text" id="address_data" name="address_data" class="form-control" required autofocus />
+          </div>
+          <div class="form-group mb-3">
+            <label for="email_data">Email</label>
+            <input type="email" id="email_data" name="email_data" class="form-control" required autofocus />
+          </div>
+          <div class="form-group mb-3">
+            <label for="passwd_data">Password</label>
+            <input type="password" id="passwd_data" name="passwd_data" class="form-control" required />
+          </div>
+          <div class="form-group mb-3">
+            <button type="reset" class="btn btn-danger">Reset</button>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </div>
+        </form>
       </div>
-      <div class="offcanvas-body">
-        <div class="modal-body">
-          <form action="#" method="get" autocomplete="on">
-            <div class="form-group mb-3">
-              <label for="fName_data">First Name</label>
-              <input
-                type="text"
-                id="fName_data"
-                name="fName_data"
-                class="form-control"
-                required
-                autofocus
-              />
-            </div>
-            <div class="form-group mb-3">
-              <label for="mName_data">Middle Name</label>
-              <input
-                type="text"
-                id="mName_data"
-                name="mName_data"
-                class="form-control"
-                autofocus
-              />
-            </div>
-            <div class="form-group mb-3">
-              <label for="lName_data">Last Name</label>
-              <input
-                type="text"
-                id="lName_data"
-                name="lName_data"
-                class="form-control"
-                required
-                autofocus
-              />
-            </div>
-            <div class="form-group mb-3">
-              <label for="address_data">Address</label>
-              <input
-                type="text"
-                id="address_data"
-                name="address_data"
-                class="form-control"
-                required
-                autofocus
-              />
-            </div>
-            <div class="form-group mb-3">
-              <label for="email_data">Email</label>
-              <input
-                type="email"
-                id="email_data"
-                name="email_data"
-                class="form-control"
-                required
-                autofocus
-              />
-            </div>
-            <div class="form-group mb-3">
-              <label for="passwd_data">Password</label>
-              <input
-                type="password"
-                id="passwd_data"
-                name="passwd_data"
-                class="form-control"
-                required
-              />
-            </div>
-            <div class="form-group mb-3">
-              <button type="reset" class="btn btn-danger">Reset</button>
-              <button type="submit" class="btn btn-primary">Send</button>
-            </div>
-          </form>
+    </div>
+  </div>
+  <!-- Modal/-->
+
+  <!-- Navbar -->
+  <!-- First Navbar -->
+  <nav class="navbar" id="navbar_first">
+    <div class="container-fluid">
+      <ul class="list-unstyled text-start" id="social_icons">
+        <li>
+          <a href="https://www.linkedin.com/in/mert-kurtoglu/" target="_blank">
+            <i class="fa-brands fa-linkedin text-primary icon_size"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <i class="fa-brands fa-youtube text-danger icon_size"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <i class="fa-solid fa-blog text-warning icon_size"></i>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="d-flex justify-content-center" id="user_icons">
+        <li id="flagDiv">
+          <a href="#">
+            <img class="flag" src="img/tr.png" alt="tr" />
+          </a>
+          <a href="#">
+            <img class="flag" src="img/en.png" alt="en" />
+          </a>
+        </li>
+        <li class="toggle-switch">
+          <input type="checkbox" id="toggle" />
+          <label for="toggle"></label>
+        </li>
+
+        <li>
+          <button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#modalLogin">
+            <i style="color: #d8e8ff" class="fa-solid fa-right-to-bracket"></i>
+          </button>
+          <button class="btn btn-sm" data-bs-toggle="offcanvas" data-bs-target="#registerModalOffCanvas">
+            <i style="color: #d8e8ff" class="fa-solid fa-user-plus"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Second Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="navbar_second">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" alt="it isn't showing logo" id="logo_id" />
+      </a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" />
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#" aria-current="page">
+              Home <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#news">
+              News
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutus">
+              About Us
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">
+              Blog
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+        <form class="d-flex my-2 my-lg-0" style="justify-content: flex-start">
+          <input class="form-control me-sm-2" type="text" placeholder="Search ..." autofocus />
+          <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar/-->
+
+  <!-- Header -->
+  <header id="header_id">
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="p-5 text-center">
+            <h1 class="text-uppercase display-1 p-4 wow animate__bounceIn">
+              Welcome to MK Solutions
+            </h1>
+            <h4>Frontend & Backend</h4>
+            <a href="https://www.linkedin.com/in/mert-kurtoglu/" target="_blank" class="btn btn-primary">Linkedin</a>
+            <a href="https://github.com/mertkurtoglu" target="_blank" class="btn btn-success">Github</a>
+          </div>
         </div>
       </div>
     </div>
-    <!-- Modal/-->
+  </header>
+  <!-- Header/-->
 
-    <!-- Navbar -->
-    <!-- First Navbar -->
-    <nav class="navbar" id="navbar_first">
-      <div class="container-fluid">
-        <ul class="list-unstyled text-start" id="social_icons">
-          <li>
-            <a href="https://www.linkedin.com/in/mert-kurtoglu/" target="_blank">
-              <i class="fa-brands fa-linkedin text-primary icon_size"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <i class="fa-brands fa-youtube text-danger icon_size"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <i class="fa-solid fa-blog text-warning icon_size"></i>
-            </a>
-          </li>
-        </ul>
-
-        <ul class="d-flex justify-content-center" id="user_icons">
-          <li id="flagDiv">
-            <a href="#">
-              <img class="flag" src="img/tr.png" alt="tr" />
-            </a>
-            <a href="#">
-              <img class="flag" src="img/en.png" alt="en" />
-            </a>
-          </li>
-          <li class="toggle-switch">
-            <input type="checkbox" id="toggle" />
-            <label htmlFor="toggle" />
-          </li>
-          <li>
-            <button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#modalLogin">
-              <i
-              style="color: #d8e8ff"
-              class="fa-solid fa-right-to-bracket"
-            ></i>
-            </button>
-            <button class="btn btn-sm" data-bs-toggle="offcanvas" data-bs-target="#registerModalOffCanvas">
-              <i style="color: #d8e8ff" class="fa-solid fa-user-plus"></i>
-            </button>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- Second Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="navbar_second">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="img/logo.png" alt="it isn't showing logo" id="logo_id" />
-        </a>
-        <button
-          class="navbar-toggler d-lg-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapsibleNavId"
-          aria-controls="collapsibleNavId"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon" />
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="#" aria-current="page">
-                Home <span class="visually-hidden">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Projects
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#news">
-                News
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#aboutus">
-                About Us
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#blog">
-                Blog
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">
-                Contact
-              </a>
-            </li>
-          </ul>
-          <form class="d-flex my-2 my-lg-0" style="justify-content: flex-start">
-            <input class="form-control me-sm-2" type="text" placeholder="Search ..." autofocus />
-            <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
-      </div>
-    </nav>
-    <!-- Navbar/-->
-
-    <!-- Header -->
-    <header id="header_id">
-      <div class="jumbotron">
-        <div class="container">
-          <div class="row">
-            <div class="p-5 text-center">
-              <h1
-                class="text-uppercase display-1 p-4 wow animate__bounceIn"
-              >
-                Welcome to Full Stack Developer Training
-              </h1>
-              <h4>Frontend & Backend</h4>
-              <a href="" class="btn btn-primary">Linkedin</a>
-              <a href="" class="btn btn-success">Github</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- Header/-->
-
-    <!-- Main -->
-    <main id="main_id">
-      <section id="projects" class="wow fadeIn">
-        <h1 class="text-center">Projects</h1>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 col-xl-4 text-center">
-              <i class="fa-solid fa-camera-retro studies_icon"></i>
-              <h4 class="text-dark">Frontend</h4>
-              <p class="line-clamp4">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Delectus temporibus perferendis quaerat obcaecati! Sequi
-                corporis sunt doloremque temporibus dolore maiores molestias
-                odit. Qui fuga, eligendi delectus ullam nihil non culpa!
-              </p>
-              <button class="btn btn-outline-primary">More</button>
-            </div>
-            <div class="col-md-4 col-xl-4 text-center">
-              <i class="fa-solid fa-server"></i>
-              <h4 class="text-dark">Backend</h4>
-              <p class="line-clamp4">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Delectus temporibus perferendis quaerat obcaecati! Sequi
-                corporis sunt doloremque temporibus dolore maiores molestias
-                odit. Qui fuga, eligendi delectus ullam nihil non culpa!
-              </p>
-              <button class="btn btn-outline-primary">More</button>
-            </div>
-            <div class="col-md-4 col-xl-4 text-center">
-              <i class="fa-solid fa-database"></i>
-              <h4 class="text-dark">Database</h4>
-              <p class="line-clamp4">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Delectus temporibus perferendis quaerat obcaecati! Sequi
-                corporis sunt doloremque temporibus dolore maiores molestias
-                odit. Qui fuga, eligendi delectus ullam nihil non culpa!
-              </p>
-              <button class="btn btn-outline-primary">More</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="achievements" class="wow fadeIn">
-        <div class="container">
-          <div class="achievements-header">
-            <h1 class="text-center">Achievements</h1>
-          </div>
-        </div>
+  <!-- Main -->
+  <main id="main_id">
+    <section id="projects" class="wow fadeIn">
+      <h1 class="text-center">Projects</h1>
+      <div class="container">
         <div class="row">
           <div class="col-md-4 col-xl-4 text-center">
-            <i class="fa-solid fa-clock text-warning"></i>
-            <span class="counter" data-counter="350"></span>
-            <h4 class="text-light">Hours Worked</h4>
+            <i class="fa-solid fa-camera-retro studies_icon"></i>
+            <h4 class="text-dark">Frontend</h4>
+            <p class="line-clamp4">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Delectus temporibus perferendis quaerat obcaecati! Sequi
+              corporis sunt doloremque temporibus dolore maiores molestias
+              odit. Qui fuga, eligendi delectus ullam nihil non culpa!
+            </p>
+            <button class="btn btn-outline-primary">More</button>
           </div>
           <div class="col-md-4 col-xl-4 text-center">
-            <i class="fa-solid fa-people-group text-warning"></i>
-            <span class="counter" data-counter="20"></span>
-            <h4 class="text-light">Team</h4>
+            <i class="fa-solid fa-server"></i>
+            <h4 class="text-dark">Backend</h4>
+            <p class="line-clamp4">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Delectus temporibus perferendis quaerat obcaecati! Sequi
+              corporis sunt doloremque temporibus dolore maiores molestias
+              odit. Qui fuga, eligendi delectus ullam nihil non culpa!
+            </p>
+            <button class="btn btn-outline-primary">More</button>
           </div>
           <div class="col-md-4 col-xl-4 text-center">
-            <i class="fa-solid fa-face-smile text-warning"></i>
-            <span class="counter" data-counter="45"></span>
-            <h4 class="text-light">Customers</h4>
-          </div>
-        </div>
-      </section>
-
-      <section id="news" class="wow fadeIn">
-        <div class="container">
-          <div class="news-header">
-            <h1 class="text-center">News</h1>
-            <p class="line-clamp12">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia,
-              vitae suscipit! Pariatur ratione cum illo doloremque temporibus
-              eum ea error expedita, autem, culpa atque dicta suscipit! Aut
-              perferendis reiciendis quia. Corrupti modi omnis id voluptatem
-              quam dolore fuga officia, suscipit accusamus sit, quos blanditiis.
-              Velit facere ab, ullam possimus pariatur provident quam labore
-              non, excepturi, a inventore. Repudiandae, voluptate beatae? Optio
-              nostrum accusamus numquam tenetur repellat veritatis ex
-              perspiciatis laudantium sit aliquam modi eaque saepe voluptatem
-              sed, vel nemo! Placeat alias ipsa aliquam! Quam, atque recusandae.
-              Sunt iste unde veritatis. Est dicta sit ullam quod deserunt
-              dolorem tempora error ad corrupti fugit. Magnam distinctio
-              laudantium aut aliquam, aliquid eligendi eaque minus, cumque quod
-              expedita numquam autem nemo dolorum pariatur fugiat? Voluptate
-              consequatur provident distinctio laboriosam illum! Cum quisquam
-              rem molestiae ullam id voluptatibus repellat cupiditate optio
-              eveniet saepe blanditiis nam dicta, possimus numquam, totam
-              deserunt eius tempore, in magni. Tempore! Tenetur facere, nemo
-              vero non consequatur minima, maxime quas sed impedit provident
-              rerum aperiam alias. Doloribus earum delectus aspernatur,
-              veritatis quam necessitatibus esse aperiam consequatur voluptas
-              maxime, ducimus error. A. Minus saepe dolor ad ipsum, consequuntur
-              error amet dolore illum quisquam, possimus dignissimos
-              reprehenderit maxime aspernatur laboriosam repellat corporis.
-              Veniam fugit recusandae, at corporis voluptates assumenda quia in
-              id sed. Modi impedit ex maxime minima voluptas quo maiores
-              quibusdam. Dolore, soluta omnis ipsa non neque illo delectus
-              veritatis, quos enim, error cum sapiente temporibus reiciendis
-              autem hic iusto magni provident? Vel tempore quasi aspernatur.
-              Eveniet quam culpa magnam minima voluptate odit sunt quidem nisi
-              neque et est iure reiciendis voluptates corporis esse, tenetur
-              fugit obcaecati repellendus cum nostrum velit temporibus! Illo
-              veniam nostrum molestias laudantium quod quae officiis eligendi
-              ratione? Sint velit corporis, vitae commodi, architecto explicabo
-              quibusdam dolores nobis id quaerat doloremque dolore veniam!
-              Fugiat placeat quo dicta quae.
+            <i class="fa-solid fa-database"></i>
+            <h4 class="text-dark">Database</h4>
+            <p class="line-clamp4">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Delectus temporibus perferendis quaerat obcaecati! Sequi
+              corporis sunt doloremque temporibus dolore maiores molestias
+              odit. Qui fuga, eligendi delectus ullam nihil non culpa!
             </p>
+            <button class="btn btn-outline-primary">More</button>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="aboutus" class="wow fadeIn">
-        <div class="container">
-            <h1 class="text-center">About Us</h1>
-          <div class="aboutus-header">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia,
-              vitae suscipit! Pariatur ratione cum illo doloremque temporibus
-              eum ea error expedita, autem, culpa atque dicta suscipit! Aut
-              perferendis reiciendis quia. Corrupti modi omnis id voluptatem
-              quam dolore fuga officia, suscipit accusamus sit, quos blanditiis.
-              Velit facere ab, ullam possimus pariatur provident quam labore
-              non, excepturi, a inventore. Repudiandae, voluptate beatae? Optio
-              nostrum accusamus numquam tenetur repellat veritatis ex
-              perspiciatis laudantium sit aliquam modi eaque saepe voluptatem
-              sed, vel nemo! Placeat alias ipsa aliquam! Quam, atque recusandae.
-              Sunt iste unde veritatis. Est dicta sit ullam quod deserunt
-              dolorem tempora error ad corrupti fugit. Magnam distinctio
-              laudantium aut aliquam, aliquid eligendi eaque minus, cumque quod
-              expedita numquam autem nemo dolorum pariatur fugiat? Voluptate
-              consequatur provident distinctio laboriosam illum! Cum quisquam
-              rem molestiae ullam id voluptatibus repellat cupiditate optio
-              eveniet saepe blanditiis nam dicta, possimus numquam, totam
-              deserunt eius tempore, in magni. Tempore! Tenetur facere, nemo
-              vero non consequatur minima, maxime quas sed impedit provident
-              rerum aperiam alias. Doloribus earum delectus aspernatur,
-              veritatis quam necessitatibus esse aperiam consequatur voluptas
-              maxime, ducimus error. A. Minus saepe dolor ad ipsum, consequuntur
-              error amet dolore illum quisquam, possimus dignissimos
-              reprehenderit maxime aspernatur laboriosam repellat corporis.
-              Veniam fugit recusandae, at corporis voluptates assumenda quia in
-              id sed. Modi impedit ex maxime minima voluptas quo maiores
-              quibusdam. Dolore, soluta omnis ipsa non neque illo delectus
-              veritatis, quos enim, error cum sapiente temporibus reiciendis
-              autem hic iusto magni provident? Vel tempore quasi aspernatur.
-              Eveniet quam culpa magnam minima voluptate odit sunt quidem nisi
-              neque et est iure reiciendis voluptates corporis esse, tenetur
-              fugit obcaecati repellendus cum nostrum velit temporibus! Illo
-              veniam nostrum molestias laudantium quod quae officiis eligendi
-              ratione? Sint velit corporis, vitae commodi, architecto explicabo
-              quibusdam dolores nobis id quaerat doloremque dolore veniam!
-              Fugiat placeat quo dicta quae.
-            </p>
-          </div>
+    <section id="achievements" class="wow fadeIn">
+      <div class="container">
+        <div class="achievements-header">
+          <h1 class="text-center">Achievements</h1>
         </div>
-      </section>
-
-      <section id="blog" class="wow fadeIn">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-              <div class="card">
-                <div class="card-header">BLOG 1</div>
-                <img
-                  class="card-img"
-                  src="./img/coffee-gebb0bade8_1280.jpg"
-                  alt=""
-                />
-                <div class="card-body">
-                  <p class="card-text line-clamp8">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Quas blanditiis odio provident mollitia omnis inventore
-                    nobis enim quo. Labore voluptatem itaque est recusandae iure
-                    temporibus sapiente voluptate et laborum nihil. Obcaecati
-                    ullam dolorum perspiciatis sequi! Corrupti debitis, illum
-                    neque deserunt illo adipisci tenetur provident. Sunt
-                    placeat, praesentium ad aliquid cupiditate vero error
-                    excepturi reprehenderit quidem temporibus assumenda
-                    voluptate vel iste. Assumenda voluptatibus veritatis tempora
-                    nemo earum maiores, officiis dolore accusamus possimus
-                    minima eligendi placeat tenetur! Quibusdam earum
-                    necessitatibus officiis, quos deleniti ducimus eum numquam
-                    non iste accusantium veritatis, similique ipsa! Assumenda
-                    magnam voluptatum laudantium voluptatibus corrupti animi,
-                    quas veniam, quisquam, sed molestiae dolorem sint debitis!
-                    Ratione ex earum cumque recusandae laborum repellendus,
-                    dolore eius nihil, ducimus, consequuntur reprehenderit
-                    doloribus nostrum. Quaerat, eum alias velit debitis minus
-                    molestias. Quam non, ipsam eaque saepe magni illo?
-                    Temporibus corrupti repudiandae explicabo tenetur eius
-                    aperiam laudantium neque rem sed nesciunt. Reprehenderit
-                    quod ab quas?
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <div class="card-header">BLOG 1</div>
-                <img
-                  class="card-img"
-                  src="./img/teamwork-g2e52e6c5d_1280.jpg"
-                  alt=""
-                />
-                <div class="card-body">
-                  <p class="card-text line-clamp8">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Quas blanditiis odio provident mollitia omnis inventore
-                    nobis enim quo. Labore voluptatem itaque est recusandae iure
-                    temporibus sapiente voluptate et laborum nihil. Obcaecati
-                    ullam dolorum perspiciatis sequi! Corrupti debitis, illum
-                    neque deserunt illo adipisci tenetur provident. Sunt
-                    placeat, praesentium ad aliquid cupiditate vero error
-                    excepturi reprehenderit quidem temporibus assumenda
-                    voluptate vel iste. Assumenda voluptatibus veritatis tempora
-                    nemo earum maiores, officiis dolore accusamus possimus
-                    minima eligendi placeat tenetur! Quibusdam earum
-                    necessitatibus officiis, quos deleniti ducimus eum numquam
-                    non iste accusantium veritatis, similique ipsa! Assumenda
-                    magnam voluptatum laudantium voluptatibus corrupti animi,
-                    quas veniam, quisquam, sed molestiae dolorem sint debitis!
-                    Ratione ex earum cumque recusandae laborum repellendus,
-                    dolore eius nihil, ducimus, consequuntur reprehenderit
-                    doloribus nostrum. Quaerat, eum alias velit debitis minus
-                    molestias. Quam non, ipsam eaque saepe magni illo?
-                    Temporibus corrupti repudiandae explicabo tenetur eius
-                    aperiam laudantium neque rem sed nesciunt. Reprehenderit
-                    quod ab quas?
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <div class="card-header">BLOG 1</div>
-                <img class="card-img" src="./img//header.jpg" alt="" />
-                <div class="card-body">
-                  <p class="card-text line-clamp8">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Quas blanditiis odio provident mollitia omnis inventore
-                    nobis enim quo. Labore voluptatem itaque est recusandae iure
-                    temporibus sapiente voluptate et laborum nihil. Obcaecati
-                    ullam dolorum perspiciatis sequi! Corrupti debitis, illum
-                    neque deserunt illo adipisci tenetur provident. Sunt
-                    placeat, praesentium ad aliquid cupiditate vero error
-                    excepturi reprehenderit quidem temporibus assumenda
-                    voluptate vel iste. Assumenda voluptatibus veritatis tempora
-                    nemo earum maiores, officiis dolore accusamus possimus
-                    minima eligendi placeat tenetur! Quibusdam earum
-                    necessitatibus officiis, quos deleniti ducimus eum numquam
-                    non iste accusantium veritatis, similique ipsa! Assumenda
-                    magnam voluptatum laudantium voluptatibus corrupti animi,
-                    quas veniam, quisquam, sed molestiae dolorem sint debitis!
-                    Ratione ex earum cumque recusandae laborum repellendus,
-                    dolore eius nihil, ducimus, consequuntur reprehenderit
-                    doloribus nostrum. Quaerat, eum alias velit debitis minus
-                    molestias. Quam non, ipsam eaque saepe magni illo?
-                    Temporibus corrupti repudiandae explicabo tenetur eius
-                    aperiam laudantium neque rem sed nesciunt. Reprehenderit
-                    quod ab quas?
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <div class="card-header">BLOG 1</div>
-                <img
-                  class="card-img"
-                  src="./img/coffee-gebb0bade8_1280.jpg"
-                  alt=""
-                />
-                <div class="card-body">
-                  <p class="card-text line-clamp8">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Quas blanditiis odio provident mollitia omnis inventore
-                    nobis enim quo. Labore voluptatem itaque est recusandae iure
-                    temporibus sapiente voluptate et laborum nihil. Obcaecati
-                    ullam dolorum perspiciatis sequi! Corrupti debitis, illum
-                    neque deserunt illo adipisci tenetur provident. Sunt
-                    placeat, praesentium ad aliquid cupiditate vero error
-                    excepturi reprehenderit quidem temporibus assumenda
-                    voluptate vel iste. Assumenda voluptatibus veritatis tempora
-                    nemo earum maiores, officiis dolore accusamus possimus
-                    minima eligendi placeat tenetur! Quibusdam earum
-                    necessitatibus officiis, quos deleniti ducimus eum numquam
-                    non iste accusantium veritatis, similique ipsa! Assumenda
-                    magnam voluptatum laudantium voluptatibus corrupti animi,
-                    quas veniam, quisquam, sed molestiae dolorem sint debitis!
-                    Ratione ex earum cumque recusandae laborum repellendus,
-                    dolore eius nihil, ducimus, consequuntur reprehenderit
-                    doloribus nostrum. Quaerat, eum alias velit debitis minus
-                    molestias. Quam non, ipsam eaque saepe magni illo?
-                    Temporibus corrupti repudiandae explicabo tenetur eius
-                    aperiam laudantium neque rem sed nesciunt. Reprehenderit
-                    quod ab quas?
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <div class="card-header">BLOG 1</div>
-                <img
-                  class="card-img"
-                  src="./img/coffee-gebb0bade8_1280.jpg"
-                  alt=""
-                />
-                <div class="card-body">
-                  <p class="card-text line-clamp8">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Quas blanditiis odio provident mollitia omnis inventore
-                    nobis enim quo. Labore voluptatem itaque est recusandae iure
-                    temporibus sapiente voluptate et laborum nihil. Obcaecati
-                    ullam dolorum perspiciatis sequi! Corrupti debitis, illum
-                    neque deserunt illo adipisci tenetur provident. Sunt
-                    placeat, praesentium ad aliquid cupiditate vero error
-                    excepturi reprehenderit quidem temporibus assumenda
-                    voluptate vel iste. Assumenda voluptatibus veritatis tempora
-                    nemo earum maiores, officiis dolore accusamus possimus
-                    minima eligendi placeat tenetur! Quibusdam earum
-                    necessitatibus officiis, quos deleniti ducimus eum numquam
-                    non iste accusantium veritatis, similique ipsa! Assumenda
-                    magnam voluptatum laudantium voluptatibus corrupti animi,
-                    quas veniam, quisquam, sed molestiae dolorem sint debitis!
-                    Ratione ex earum cumque recusandae laborum repellendus,
-                    dolore eius nihil, ducimus, consequuntur reprehenderit
-                    doloribus nostrum. Quaerat, eum alias velit debitis minus
-                    molestias. Quam non, ipsam eaque saepe magni illo?
-                    Temporibus corrupti repudiandae explicabo tenetur eius
-                    aperiam laudantium neque rem sed nesciunt. Reprehenderit
-                    quod ab quas?
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <div class="card-header">BLOG 1</div>
-                <img
-                  class="card-img"
-                  src="./img/teamwork-g2e52e6c5d_1280.jpg"
-                  alt=""
-                />
-                <div class="card-body">
-                  <p class="card-text line-clamp8">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Quas blanditiis odio provident mollitia omnis inventore
-                    nobis enim quo. Labore voluptatem itaque est recusandae iure
-                    temporibus sapiente voluptate et laborum nihil. Obcaecati
-                    ullam dolorum perspiciatis sequi! Corrupti debitis, illum
-                    neque deserunt illo adipisci tenetur provident. Sunt
-                    placeat, praesentium ad aliquid cupiditate vero error
-                    excepturi reprehenderit quidem temporibus assumenda
-                    voluptate vel iste. Assumenda voluptatibus veritatis tempora
-                    nemo earum maiores, officiis dolore accusamus possimus
-                    minima eligendi placeat tenetur! Quibusdam earum
-                    necessitatibus officiis, quos deleniti ducimus eum numquam
-                    non iste accusantium veritatis, similique ipsa! Assumenda
-                    magnam voluptatum laudantium voluptatibus corrupti animi,
-                    quas veniam, quisquam, sed molestiae dolorem sint debitis!
-                    Ratione ex earum cumque recusandae laborum repellendus,
-                    dolore eius nihil, ducimus, consequuntur reprehenderit
-                    doloribus nostrum. Quaerat, eum alias velit debitis minus
-                    molestias. Quam non, ipsam eaque saepe magni illo?
-                    Temporibus corrupti repudiandae explicabo tenetur eius
-                    aperiam laudantium neque rem sed nesciunt. Reprehenderit
-                    quod ab quas?
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <div class="card-header">BLOG 1</div>
-                <img class="card-img" src="./img//header.jpg" alt="" />
-                <div class="card-body">
-                  <p class="card-text line-clamp8">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Quas blanditiis odio provident mollitia omnis inventore
-                    nobis enim quo. Labore voluptatem itaque est recusandae iure
-                    temporibus sapiente voluptate et laborum nihil. Obcaecati
-                    ullam dolorum perspiciatis sequi! Corrupti debitis, illum
-                    neque deserunt illo adipisci tenetur provident. Sunt
-                    placeat, praesentium ad aliquid cupiditate vero error
-                    excepturi reprehenderit quidem temporibus assumenda
-                    voluptate vel iste. Assumenda voluptatibus veritatis tempora
-                    nemo earum maiores, officiis dolore accusamus possimus
-                    minima eligendi placeat tenetur! Quibusdam earum
-                    necessitatibus officiis, quos deleniti ducimus eum numquam
-                    non iste accusantium veritatis, similique ipsa! Assumenda
-                    magnam voluptatum laudantium voluptatibus corrupti animi,
-                    quas veniam, quisquam, sed molestiae dolorem sint debitis!
-                    Ratione ex earum cumque recusandae laborum repellendus,
-                    dolore eius nihil, ducimus, consequuntur reprehenderit
-                    doloribus nostrum. Quaerat, eum alias velit debitis minus
-                    molestias. Quam non, ipsam eaque saepe magni illo?
-                    Temporibus corrupti repudiandae explicabo tenetur eius
-                    aperiam laudantium neque rem sed nesciunt. Reprehenderit
-                    quod ab quas?
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <div class="card-header">BLOG 1</div>
-                <img
-                  class="card-img"
-                  src="./img/coffee-gebb0bade8_1280.jpg"
-                  alt=""
-                />
-                <div class="card-body">
-                  <p class="card-text line-clamp8">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Quas blanditiis odio provident mollitia omnis inventore
-                    nobis enim quo. Labore voluptatem itaque est recusandae iure
-                    temporibus sapiente voluptate et laborum nihil. Obcaecati
-                    ullam dolorum perspiciatis sequi! Corrupti debitis, illum
-                    neque deserunt illo adipisci tenetur provident. Sunt
-                    placeat, praesentium ad aliquid cupiditate vero error
-                    excepturi reprehenderit quidem temporibus assumenda
-                    voluptate vel iste. Assumenda voluptatibus veritatis tempora
-                    nemo earum maiores, officiis dolore accusamus possimus
-                    minima eligendi placeat tenetur! Quibusdam earum
-                    necessitatibus officiis, quos deleniti ducimus eum numquam
-                    non iste accusantium veritatis, similique ipsa! Assumenda
-                    magnam voluptatum laudantium voluptatibus corrupti animi,
-                    quas veniam, quisquam, sed molestiae dolorem sint debitis!
-                    Ratione ex earum cumque recusandae laborum repellendus,
-                    dolore eius nihil, ducimus, consequuntur reprehenderit
-                    doloribus nostrum. Quaerat, eum alias velit debitis minus
-                    molestias. Quam non, ipsam eaque saepe magni illo?
-                    Temporibus corrupti repudiandae explicabo tenetur eius
-                    aperiam laudantium neque rem sed nesciunt. Reprehenderit
-                    quod ab quas?
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-xl-4 text-center">
+          <i class="fa-solid fa-clock text-warning"></i>
+          <span class="counter" data-counter="350"></span>
+          <h4 class="text-light">Hours Worked</h4>
         </div>
-      </section>
-
-      <section id="map">
-        <iframe
-          frameborder="0"
-          scrolling="no"
-          marginheight="0"
-          marginwidth="0"
-          id="gmap_canvas"
-          src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Izmir+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-        ></iframe>
-      </section>
-    </main>
-    <!-- Main/-->
-
-    <!-- Footer -->
-    <footer id="footer_id">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4 col-lg-4" id="contact">
-                    <div>
-                    <h3 class="text-uppercase">Contact</h3>
-                    <div>
-                        <i class="fas fa-home me-3 text-secondary"></i> İzmir /
-                        TÜRKİYE
-                    </div>
-                    <div>
-                        <i class="fas fa-envelope me-3 text-secondary"></i> 
-                         info@example.com
-                    </div>
-                    <div>
-                        <i class="fas fa-phone me-3 text-secondary"></i> + 01 234
-                        567 88
-                    </div>
-                    <div>
-                        <i class="fas fa-print me-3 text-secondary"></i> + 01 234
-                        567 89
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-4">
-                <p>
-                <h3 class="text-uppercase">About Us</h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ut
-                eligendi eos voluptatum debitis a delectus quo nam optio
-                cupiditate impedit architecto maxime, consectetur, excepturi
-                recusandae rerum, iure saepe accusamus.
-              </p>
-            </div>
-            <div class="col-md-4 col-lg-4">
-              <h3 class="text-uppercase">Email</h3>
-              <form action="#" id="form_email">
-                <input
-                  type="text"
-                  class="form-control mb-2"
-                  placeholder="Subject"
-                  autofocus
-                  required
-                />
-                <input
-                  type="text"
-                  class="form-control mb-2"
-                  placeholder="Email"
-                  autofocus
-                  required
-                />
-                <textarea
-                  class="form-control"
-                  rows="4"
-                  placeholder="Write your message"
-                ></textarea>
-                <button type="submit" class="btn btn-outline-primary mt-3">
-                  Send
-                </button>
-              </form>
-            </div>
+        <div class="col-md-4 col-xl-4 text-center">
+          <i class="fa-solid fa-people-group text-warning"></i>
+          <span class="counter" data-counter="20"></span>
+          <h4 class="text-light">Team</h4>
         </div>
-        <a id="back_top" href="#" class="btn btn-primary"><i class="fa-solid fa-arrow-up" style="margin-left: -.35rem;"></i></a>
-    </div>
-    <div id="footer_row">
-          <p>
-            2022-2023 &copy; All rights reserved.
-            <a href="https://www.linkedin.com/in/mert-kurtoglu/" target="_blank">Design and codes By Mert Kurtoğlu</a>
+        <div class="col-md-4 col-xl-4 text-center">
+          <i class="fa-solid fa-face-smile text-warning"></i>
+          <span class="counter" data-counter="45"></span>
+          <h4 class="text-light">Customers</h4>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" class="wow fadeIn">
+      <div class="container">
+        <div class="news-header">
+          <h1 class="text-center">News</h1>
+          <p class="line-clamp12">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            vitae suscipit! Pariatur ratione cum illo doloremque temporibus
+            eum ea error expedita, autem, culpa atque dicta suscipit! Aut
+            perferendis reiciendis quia. Corrupti modi omnis id voluptatem
+            quam dolore fuga officia, suscipit accusamus sit, quos blanditiis.
+            Velit facere ab, ullam possimus pariatur provident quam labore
+            non, excepturi, a inventore. Repudiandae, voluptate beatae? Optio
+            nostrum accusamus numquam tenetur repellat veritatis ex
+            perspiciatis laudantium sit aliquam modi eaque saepe voluptatem
+            sed, vel nemo! Placeat alias ipsa aliquam! Quam, atque recusandae.
+            Sunt iste unde veritatis. Est dicta sit ullam quod deserunt
+            dolorem tempora error ad corrupti fugit. Magnam distinctio
+            laudantium aut aliquam, aliquid eligendi eaque minus, cumque quod
+            expedita numquam autem nemo dolorum pariatur fugiat? Voluptate
+            consequatur provident distinctio laboriosam illum! Cum quisquam
+            rem molestiae ullam id voluptatibus repellat cupiditate optio
+            eveniet saepe blanditiis nam dicta, possimus numquam, totam
+            deserunt eius tempore, in magni. Tempore! Tenetur facere, nemo
+            vero non consequatur minima, maxime quas sed impedit provident
+            rerum aperiam alias. Doloribus earum delectus aspernatur,
+            veritatis quam necessitatibus esse aperiam consequatur voluptas
+            maxime, ducimus error. A. Minus saepe dolor ad ipsum, consequuntur
+            error amet dolore illum quisquam, possimus dignissimos
+            reprehenderit maxime aspernatur laboriosam repellat corporis.
+            Veniam fugit recusandae, at corporis voluptates assumenda quia in
+            id sed. Modi impedit ex maxime minima voluptas quo maiores
+            quibusdam. Dolore, soluta omnis ipsa non neque illo delectus
+            veritatis, quos enim, error cum sapiente temporibus reiciendis
+            autem hic iusto magni provident? Vel tempore quasi aspernatur.
+            Eveniet quam culpa magnam minima voluptate odit sunt quidem nisi
+            neque et est iure reiciendis voluptates corporis esse, tenetur
+            fugit obcaecati repellendus cum nostrum velit temporibus! Illo
+            veniam nostrum molestias laudantium quod quae officiis eligendi
+            ratione? Sint velit corporis, vitae commodi, architecto explicabo
+            quibusdam dolores nobis id quaerat doloremque dolore veniam!
+            Fugiat placeat quo dicta quae.
           </p>
         </div>
-    </footer>
-    <!-- Footer/-->
+      </div>
+    </section>
 
-    <!-- Counter JS -->
-    <!-- Waypoints JavaScript Libraries -->
-    <script src="./experiences/waypoints/waypoints.min.js"></script>
-    <!-- Counterup JavaScript Libraries -->
-    <script src="./experiences/counterup/counterup.min.js"></script>
+    <section id="aboutus" class="wow fadeIn">
+      <div class="container">
+        <h1 class="text-center">About Us</h1>
+        <div class="aboutus-header">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            vitae suscipit! Pariatur ratione cum illo doloremque temporibus
+            eum ea error expedita, autem, culpa atque dicta suscipit! Aut
+            perferendis reiciendis quia. Corrupti modi omnis id voluptatem
+            quam dolore fuga officia, suscipit accusamus sit, quos blanditiis.
+            Velit facere ab, ullam possimus pariatur provident quam labore
+            non, excepturi, a inventore. Repudiandae, voluptate beatae? Optio
+            nostrum accusamus numquam tenetur repellat veritatis ex
+            perspiciatis laudantium sit aliquam modi eaque saepe voluptatem
+            sed, vel nemo! Placeat alias ipsa aliquam! Quam, atque recusandae.
+            Sunt iste unde veritatis. Est dicta sit ullam quod deserunt
+            dolorem tempora error ad corrupti fugit. Magnam distinctio
+            laudantium aut aliquam, aliquid eligendi eaque minus, cumque quod
+            expedita numquam autem nemo dolorum pariatur fugiat? Voluptate
+            consequatur provident distinctio laboriosam illum! Cum quisquam
+            rem molestiae ullam id voluptatibus repellat cupiditate optio
+            eveniet saepe blanditiis nam dicta, possimus numquam, totam
+            deserunt eius tempore, in magni. Tempore! Tenetur facere, nemo
+            vero non consequatur minima, maxime quas sed impedit provident
+            rerum aperiam alias. Doloribus earum delectus aspernatur,
+            veritatis quam necessitatibus esse aperiam consequatur voluptas
+            maxime, ducimus error. A. Minus saepe dolor ad ipsum, consequuntur
+            error amet dolore illum quisquam, possimus dignissimos
+            reprehenderit maxime aspernatur laboriosam repellat corporis.
+            Veniam fugit recusandae, at corporis voluptates assumenda quia in
+            id sed. Modi impedit ex maxime minima voluptas quo maiores
+            quibusdam. Dolore, soluta omnis ipsa non neque illo delectus
+            veritatis, quos enim, error cum sapiente temporibus reiciendis
+            autem hic iusto magni provident? Vel tempore quasi aspernatur.
+            Eveniet quam culpa magnam minima voluptate odit sunt quidem nisi
+            neque et est iure reiciendis voluptates corporis esse, tenetur
+            fugit obcaecati repellendus cum nostrum velit temporibus! Illo
+            veniam nostrum molestias laudantium quod quae officiis eligendi
+            ratione? Sint velit corporis, vitae commodi, architecto explicabo
+            quibusdam dolores nobis id quaerat doloremque dolore veniam!
+            Fugiat placeat quo dicta quae.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
+    <section id="blog" class="wow fadeIn">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-header">BLOG 1</div>
+              <a href="#blog">
+                <img class="card-img" src="./img/coffee-gebb0bade8_1280.jpg" alt="" />
+              </a>
+              <div class="card-body">
+                <p class="card-text line-clamp8">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Quas blanditiis odio provident mollitia omnis inventore
+                  nobis enim quo. Labore voluptatem itaque est recusandae iure
+                  temporibus sapiente voluptate et laborum nihil. Obcaecati
+                  ullam dolorum perspiciatis sequi! Corrupti debitis, illum
+                  neque deserunt illo adipisci tenetur provident. Sunt
+                  placeat, praesentium ad aliquid cupiditate vero error
+                  excepturi reprehenderit quidem temporibus assumenda
+                  voluptate vel iste. Assumenda voluptatibus veritatis tempora
+                  nemo earum maiores, officiis dolore accusamus possimus
+                  minima eligendi placeat tenetur! Quibusdam earum
+                  necessitatibus officiis, quos deleniti ducimus eum numquam
+                  non iste accusantium veritatis, similique ipsa! Assumenda
+                  magnam voluptatum laudantium voluptatibus corrupti animi,
+                  quas veniam, quisquam, sed molestiae dolorem sint debitis!
+                  Ratione ex earum cumque recusandae laborum repellendus,
+                  dolore eius nihil, ducimus, consequuntur reprehenderit
+                  doloribus nostrum. Quaerat, eum alias velit debitis minus
+                  molestias. Quam non, ipsam eaque saepe magni illo?
+                  Temporibus corrupti repudiandae explicabo tenetur eius
+                  aperiam laudantium neque rem sed nesciunt. Reprehenderit
+                  quod ab quas?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-header">BLOG 2</div>
+              <a href="#blog">
+                <img class="card-img" src="./img/teamwork-g2e52e6c5d_1280.jpg" alt="" />
+              </a>
+              <div class="card-body">
+                <p class="card-text line-clamp8">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Quas blanditiis odio provident mollitia omnis inventore
+                  nobis enim quo. Labore voluptatem itaque est recusandae iure
+                  temporibus sapiente voluptate et laborum nihil. Obcaecati
+                  ullam dolorum perspiciatis sequi! Corrupti debitis, illum
+                  neque deserunt illo adipisci tenetur provident. Sunt
+                  placeat, praesentium ad aliquid cupiditate vero error
+                  excepturi reprehenderit quidem temporibus assumenda
+                  voluptate vel iste. Assumenda voluptatibus veritatis tempora
+                  nemo earum maiores, officiis dolore accusamus possimus
+                  minima eligendi placeat tenetur! Quibusdam earum
+                  necessitatibus officiis, quos deleniti ducimus eum numquam
+                  non iste accusantium veritatis, similique ipsa! Assumenda
+                  magnam voluptatum laudantium voluptatibus corrupti animi,
+                  quas veniam, quisquam, sed molestiae dolorem sint debitis!
+                  Ratione ex earum cumque recusandae laborum repellendus,
+                  dolore eius nihil, ducimus, consequuntur reprehenderit
+                  doloribus nostrum. Quaerat, eum alias velit debitis minus
+                  molestias. Quam non, ipsam eaque saepe magni illo?
+                  Temporibus corrupti repudiandae explicabo tenetur eius
+                  aperiam laudantium neque rem sed nesciunt. Reprehenderit
+                  quod ab quas?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-header">BLOG 3</div>
+              <a href="#blog">
+                <img class="card-img" src="./img//header.jpg" alt="" />
+              </a>
+              <div class="card-body">
+                <p class="card-text line-clamp8">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Quas blanditiis odio provident mollitia omnis inventore
+                  nobis enim quo. Labore voluptatem itaque est recusandae iure
+                  temporibus sapiente voluptate et laborum nihil. Obcaecati
+                  ullam dolorum perspiciatis sequi! Corrupti debitis, illum
+                  neque deserunt illo adipisci tenetur provident. Sunt
+                  placeat, praesentium ad aliquid cupiditate vero error
+                  excepturi reprehenderit quidem temporibus assumenda
+                  voluptate vel iste. Assumenda voluptatibus veritatis tempora
+                  nemo earum maiores, officiis dolore accusamus possimus
+                  minima eligendi placeat tenetur! Quibusdam earum
+                  necessitatibus officiis, quos deleniti ducimus eum numquam
+                  non iste accusantium veritatis, similique ipsa! Assumenda
+                  magnam voluptatum laudantium voluptatibus corrupti animi,
+                  quas veniam, quisquam, sed molestiae dolorem sint debitis!
+                  Ratione ex earum cumque recusandae laborum repellendus,
+                  dolore eius nihil, ducimus, consequuntur reprehenderit
+                  doloribus nostrum. Quaerat, eum alias velit debitis minus
+                  molestias. Quam non, ipsam eaque saepe magni illo?
+                  Temporibus corrupti repudiandae explicabo tenetur eius
+                  aperiam laudantium neque rem sed nesciunt. Reprehenderit
+                  quod ab quas?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-header">BLOG 4</div>
+              <a href="#blog">
+                <img class="card-img" src="./img/coffee-gebb0bade8_1280.jpg" alt="" />
+              </a>
+              <div class="card-body">
+                <p class="card-text line-clamp8">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Quas blanditiis odio provident mollitia omnis inventore
+                  nobis enim quo. Labore voluptatem itaque est recusandae iure
+                  temporibus sapiente voluptate et laborum nihil. Obcaecati
+                  ullam dolorum perspiciatis sequi! Corrupti debitis, illum
+                  neque deserunt illo adipisci tenetur provident. Sunt
+                  placeat, praesentium ad aliquid cupiditate vero error
+                  excepturi reprehenderit quidem temporibus assumenda
+                  voluptate vel iste. Assumenda voluptatibus veritatis tempora
+                  nemo earum maiores, officiis dolore accusamus possimus
+                  minima eligendi placeat tenetur! Quibusdam earum
+                  necessitatibus officiis, quos deleniti ducimus eum numquam
+                  non iste accusantium veritatis, similique ipsa! Assumenda
+                  magnam voluptatum laudantium voluptatibus corrupti animi,
+                  quas veniam, quisquam, sed molestiae dolorem sint debitis!
+                  Ratione ex earum cumque recusandae laborum repellendus,
+                  dolore eius nihil, ducimus, consequuntur reprehenderit
+                  doloribus nostrum. Quaerat, eum alias velit debitis minus
+                  molestias. Quam non, ipsam eaque saepe magni illo?
+                  Temporibus corrupti repudiandae explicabo tenetur eius
+                  aperiam laudantium neque rem sed nesciunt. Reprehenderit
+                  quod ab quas?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-header">BLOG 5</div>
+              <a href="#blog">
+                <img class="card-img" src="./img/coffee-gebb0bade8_1280.jpg" alt="" />
+              </a>
+              <div class="card-body">
+                <p class="card-text line-clamp8">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Quas blanditiis odio provident mollitia omnis inventore
+                  nobis enim quo. Labore voluptatem itaque est recusandae iure
+                  temporibus sapiente voluptate et laborum nihil. Obcaecati
+                  ullam dolorum perspiciatis sequi! Corrupti debitis, illum
+                  neque deserunt illo adipisci tenetur provident. Sunt
+                  placeat, praesentium ad aliquid cupiditate vero error
+                  excepturi reprehenderit quidem temporibus assumenda
+                  voluptate vel iste. Assumenda voluptatibus veritatis tempora
+                  nemo earum maiores, officiis dolore accusamus possimus
+                  minima eligendi placeat tenetur! Quibusdam earum
+                  necessitatibus officiis, quos deleniti ducimus eum numquam
+                  non iste accusantium veritatis, similique ipsa! Assumenda
+                  magnam voluptatum laudantium voluptatibus corrupti animi,
+                  quas veniam, quisquam, sed molestiae dolorem sint debitis!
+                  Ratione ex earum cumque recusandae laborum repellendus,
+                  dolore eius nihil, ducimus, consequuntur reprehenderit
+                  doloribus nostrum. Quaerat, eum alias velit debitis minus
+                  molestias. Quam non, ipsam eaque saepe magni illo?
+                  Temporibus corrupti repudiandae explicabo tenetur eius
+                  aperiam laudantium neque rem sed nesciunt. Reprehenderit
+                  quod ab quas?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-header">BLOG 6</div>
+              <a href="#blog">
+                <img class="card-img" src="./img/teamwork-g2e52e6c5d_1280.jpg" alt="" />
+              </a>
+              <div class="card-body">
+                <p class="card-text line-clamp8">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Quas blanditiis odio provident mollitia omnis inventore
+                  nobis enim quo. Labore voluptatem itaque est recusandae iure
+                  temporibus sapiente voluptate et laborum nihil. Obcaecati
+                  ullam dolorum perspiciatis sequi! Corrupti debitis, illum
+                  neque deserunt illo adipisci tenetur provident. Sunt
+                  placeat, praesentium ad aliquid cupiditate vero error
+                  excepturi reprehenderit quidem temporibus assumenda
+                  voluptate vel iste. Assumenda voluptatibus veritatis tempora
+                  nemo earum maiores, officiis dolore accusamus possimus
+                  minima eligendi placeat tenetur! Quibusdam earum
+                  necessitatibus officiis, quos deleniti ducimus eum numquam
+                  non iste accusantium veritatis, similique ipsa! Assumenda
+                  magnam voluptatum laudantium voluptatibus corrupti animi,
+                  quas veniam, quisquam, sed molestiae dolorem sint debitis!
+                  Ratione ex earum cumque recusandae laborum repellendus,
+                  dolore eius nihil, ducimus, consequuntur reprehenderit
+                  doloribus nostrum. Quaerat, eum alias velit debitis minus
+                  molestias. Quam non, ipsam eaque saepe magni illo?
+                  Temporibus corrupti repudiandae explicabo tenetur eius
+                  aperiam laudantium neque rem sed nesciunt. Reprehenderit
+                  quod ab quas?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-header">BLOG 7</div>
+              <a href="#blog">
+                <img class="card-img" src="./img//header.jpg" alt="" />
+              </a>
+              <div class="card-body">
+                <p class="card-text line-clamp8">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Quas blanditiis odio provident mollitia omnis inventore
+                  nobis enim quo. Labore voluptatem itaque est recusandae iure
+                  temporibus sapiente voluptate et laborum nihil. Obcaecati
+                  ullam dolorum perspiciatis sequi! Corrupti debitis, illum
+                  neque deserunt illo adipisci tenetur provident. Sunt
+                  placeat, praesentium ad aliquid cupiditate vero error
+                  excepturi reprehenderit quidem temporibus assumenda
+                  voluptate vel iste. Assumenda voluptatibus veritatis tempora
+                  nemo earum maiores, officiis dolore accusamus possimus
+                  minima eligendi placeat tenetur! Quibusdam earum
+                  necessitatibus officiis, quos deleniti ducimus eum numquam
+                  non iste accusantium veritatis, similique ipsa! Assumenda
+                  magnam voluptatum laudantium voluptatibus corrupti animi,
+                  quas veniam, quisquam, sed molestiae dolorem sint debitis!
+                  Ratione ex earum cumque recusandae laborum repellendus,
+                  dolore eius nihil, ducimus, consequuntur reprehenderit
+                  doloribus nostrum. Quaerat, eum alias velit debitis minus
+                  molestias. Quam non, ipsam eaque saepe magni illo?
+                  Temporibus corrupti repudiandae explicabo tenetur eius
+                  aperiam laudantium neque rem sed nesciunt. Reprehenderit
+                  quod ab quas?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-header">BLOG 8</div>
+              <a href="#blog">
+                <img class="card-img" src="./img/coffee-gebb0bade8_1280.jpg" alt="" />
+              </a>
+              <div class="card-body">
+                <p class="card-text line-clamp8">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Quas blanditiis odio provident mollitia omnis inventore
+                  nobis enim quo. Labore voluptatem itaque est recusandae iure
+                  temporibus sapiente voluptate et laborum nihil. Obcaecati
+                  ullam dolorum perspiciatis sequi! Corrupti debitis, illum
+                  neque deserunt illo adipisci tenetur provident. Sunt
+                  placeat, praesentium ad aliquid cupiditate vero error
+                  excepturi reprehenderit quidem temporibus assumenda
+                  voluptate vel iste. Assumenda voluptatibus veritatis tempora
+                  nemo earum maiores, officiis dolore accusamus possimus
+                  minima eligendi placeat tenetur! Quibusdam earum
+                  necessitatibus officiis, quos deleniti ducimus eum numquam
+                  non iste accusantium veritatis, similique ipsa! Assumenda
+                  magnam voluptatum laudantium voluptatibus corrupti animi,
+                  quas veniam, quisquam, sed molestiae dolorem sint debitis!
+                  Ratione ex earum cumque recusandae laborum repellendus,
+                  dolore eius nihil, ducimus, consequuntur reprehenderit
+                  doloribus nostrum. Quaerat, eum alias velit debitis minus
+                  molestias. Quam non, ipsam eaque saepe magni illo?
+                  Temporibus corrupti repudiandae explicabo tenetur eius
+                  aperiam laudantium neque rem sed nesciunt. Reprehenderit
+                  quod ab quas?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-      crossorigin="anonymous"
-    ></script>
+    <section id="map">
+      <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas"
+        src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Izmir+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+    </section>
+  </main>
+  <!-- Main/-->
 
-    <!-- External JS -->
-    <script src="./js/template.js"></script>
-  </body>
+  <!-- Footer -->
+  <footer id="footer_id">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 col-lg-4" id="contact">
+          <div>
+            <h3 class="text-uppercase">Contact</h3>
+            <div>
+              <i class="fas fa-home me-3 text-secondary"></i> İzmir /
+              TÜRKİYE
+            </div>
+            <div>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              info@example.com
+            </div>
+            <div>
+              <i class="fas fa-phone me-3 text-secondary"></i> + 90 232
+              XXX XX XX
+            </div>
+            <div>
+              <i class="fas fa-print me-3 text-secondary"></i> + 90 232
+              XXX XX XX
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-4">
+          <p>
+          <h3 class="text-uppercase">About Us</h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ut
+          eligendi eos voluptatum debitis a delectus quo nam optio
+          cupiditate impedit architecto maxime, consectetur, excepturi
+          recusandae rerum, iure saepe accusamus.
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-4">
+          <h3 class="text-uppercase">Email</h3>
+          <form action="#" id="form_email">
+            <input type="text" class="form-control mb-2" placeholder="Subject" autofocus required />
+            <input type="text" class="form-control mb-2" placeholder="Email" autofocus required />
+            <textarea class="form-control" rows="4" placeholder="Write your message"></textarea>
+            <button type="submit" class="btn btn-outline-primary mt-3">
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+      <a id="back_top" href="#" class="btn btn-primary"><i class="fa-solid fa-arrow-up"
+          style="margin-left: -.35rem;"></i></a>
+    </div>
+    <div id="footer_row">
+      <p>
+        2022-2023 &copy; All rights reserved.
+        <a href="https://www.linkedin.com/in/mert-kurtoglu/" target="_blank">Design and codes By Mert Kurtoğlu</a>
+      </p>
+    </div>
+  </footer>
+  <!-- Footer/-->
+
+  <!-- Counter JS -->
+  <!-- Waypoints JavaScript Libraries -->
+  <script src="./experiences/waypoints/waypoints.min.js"></script>
+  <!-- Counterup JavaScript Libraries -->
+  <script src="./experiences/counterup/counterup.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"></script>
+
+  <!-- External JS -->
+  <script src="./js/template.js"></script>
+</body>
+
 </html>

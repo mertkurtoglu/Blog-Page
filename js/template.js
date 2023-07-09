@@ -21,12 +21,6 @@ $(window).scroll(function () {
     : "";
 });
 
-// ### DARK MODE ###
-// let darkMode = () => {
-//   var element = document.body;
-//   element.classList.toggle("dark_mode");
-// };
-
 //---- DARK MODE ----//
 
 let toggleSwitch = document.getElementById("toggle");
@@ -40,35 +34,24 @@ toggleSwitch.addEventListener("change", function () {
 
 function enableDarkMode() {
   document.body.classList.add("dark_mode");
-  document.getElementById("projects").classList.add("dark_mode");
+  document.getElementsByTagName("body").classList.add("dark_mode");
 }
 
 function disableDarkMode() {
   document.body.classList.remove("dark_mode");
-  document.getElementById("projects").classList.remove("dark_mode");
+  document.getElementsByTagName("body").classList.remove("dark_mode");
 }
 
 //---- SCROLL TOP ----//
 
 $(window).scroll(function () {
-  $(this).scrollTop() > 80
-    ? $("#back_top").fadeIn("slow")
-    : $("#back_top").fadeOut("slow");
+  $(this).scrollTop() > 80 ? $("#back_top").fadeIn("slow") : $("#back_top").fadeOut("slow");
 }); //end window
 
 //---- SEARCH ----//
 
 $(document).ready(function () {
-  const searchData = [
-    "Adana",
-    "Ankara",
-    "Balıkesir",
-    "Diyarbakır",
-    "Elazığ",
-    "Hatay",
-    "İstanbul",
-    "Malatya",
-  ];
+  const searchData = ["Adana", "Ankara", "Balıkesir", "Diyarbakır", "Elazığ", "Hatay", "İstanbul", "Malatya"];
   $("#tags").autocomplete({
     source: searchData,
   });
@@ -76,9 +59,12 @@ $(document).ready(function () {
 
 //---- LOGIN ----//
 
+//
 $(function (event) {
   $("#loginSubmit").click(function () {
-    let email, passwd;
+    let email,
+      passwd,
+      login = false;
     email = jQuery.trim($("#email_data").val());
     passwd = jQuery.trim($("#password_data").val());
 
@@ -94,5 +80,7 @@ $(function (event) {
     if (passwd == "") {
       $("#passwd_data_validation").html("Şifre Boş geçilemez...");
     }
+
+    login = true;
   });
 });
