@@ -1,6 +1,6 @@
 This project is a blog page that showcases various sections such as projects, achievements, news, about us, blog, and a map. It includes HTML, CSS, and JavaScript code to create an interactive and visually appealing web page.
 
-<img src="images/blog.gif" width="600px" ><br></br>
+<img src="img\blog.gif" width="600px" ><br></br>
 
 ## Table of Contents
 
